@@ -12,16 +12,16 @@ export default function Home() {
 
     return (
         <div className="
-            flex flex-col-reverse items-center justify-center gap-10 pt-36 pb-16 px-6
+            flex flex-col-reverse items-center justify-center h-[80vh] gap-10 px-4
             sm:flex-col-reverse sm:gap-10 sm:pt-28 sm:pb-16 sm:px-10
-            md:flex-row md:items-center md:justify-between md:gap-10 md:py-20 md:px-20
+            md:flex-row md:items-center md:justify-between md:gap-10 md:py-20 md:px-20 md:pt-36 md:pb-16
             lg:gap-16 lg:px-35 xl:px-45 xl:pt-10
             xl:gap-20 2xl:px-60
-            min-h-screen
+            md:min-h-screen
         ">
             {/* Text Content */}
             <div className="flex flex-col items-center text-center md:items-start md:text-left w-full md:w-auto">
-                <div className="inline-block space-y-2 sm:space-y-3">
+                <div className="inline-block space-y-0 sm:space-y-3">
                     <h2 className="text-gray-700 font-semibold text-2xl sm:text-xl md:text-2xl lg:text-4xl">
                         Hello mate!
                     </h2>

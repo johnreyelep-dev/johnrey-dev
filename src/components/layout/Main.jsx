@@ -16,7 +16,7 @@ export default function Main(){
             <section  id='Skills' className='mt-30 mb-20 scroll-mt-18'>
                 <Skills/>
             </section>
-            <section id='Contact' className='mt-30 mb-20 scroll-mt-18 '>
+            <section id='Contact' className='mt-30 mb-10 md:mb-20 scroll-mt-18 '>
                 < Contact/> 
             </section>
         </div>

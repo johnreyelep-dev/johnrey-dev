@@ -75,42 +75,43 @@ export default function About() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
-        <div className="flex flex-col w-full pb-16 sm:pb-0 px-4 sm:px-10 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="flex flex-col w-full pb-0 px-4 sm:px-10 md:pb-16 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
             <ShowImage
                 imgSrc={selectedImage?.imgSrc}
                 description={selectedImage?.description}
                 onClose={() => setSelectedImage(null)}
             />
 
-            <div className='flex flex-col-reverse lg:flex-row w-full justify-between gap-10 lg:gap-16'>
+            <div className='flex flex-col lg:flex-row w-full justify-between gap-10 lg:gap-16'>
                 {/* Text & Certificates */}
                 <div className="w-full lg:w-1/2">
                     <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">About me</h1>
                     <p className="text-gray-700 text-base sm:text-md md:text-lg xl:text-xl text-justify leading-relaxed">
                         Aspiring Full-Stack Web Developer focused on building secure, scalable, and responsive web applications. With experience in HackForGov Capture-The-Flag competitions, I have hands-on exposure to cybersecurity challenges such as SQL injection, OSINT, and web exploitation that strengthening my ability to develop secure and reliable systems.
                     </p>
-
+                </div>
+                <div>
                     <h3 className="text-gray-700 font-semibold text-xl sm:text-2xl mb-3 mt-3 sm:mt-3 lg:mt-5">Certificate</h3>
                     <Item items={items} onShowImage={setSelectedImage} />
                 </div>
 
                 {/* Profile */}
-                <div className='flex flex-col items-center justify-center text-center gap-4 lg:gap-5'>
-                    <div className='flex items-center justify-center w-48 h-48 sm:w-64 sm:h-64 lg:w-75 lg:h-75 xl:w-96 xl:h-96 bg-[#007acc]/70 border-10 border-[#007acc] rounded-full overflow-hidden'>
-                        <img src={profile} alt="profile" className='w-full h-full object-cover' />
-                    </div>
-                    <h3 className='text-gray-700 text-xl sm:text-2xl font-semibold'>John Rey Icaro Elep</h3>
-                    <div className='flex items-center justify-between gap-5'>
-                        <span className='text-gray-700 sm:text-md'>Full-Stack Developer </span>
-                        <div className='w-1 h-1 bg-gray-700 rounded-full'></div>
-                        <span className='text-gray-700 sm:text-md'>Security Enthusiast</span>
-                    </div>
-                    <div className='flex items-center justify-center shadow-[0px_0px_10px_rgba(0,122,204,0.8)] rounded-2xl'>
-                        <div className='border-r border-[#007acc]/40 p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10'>{items.length}+</div>
-                        <div className='border-r border-[#007acc]/40 p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10'>CTF Completed</div>
-                        <div className='p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10 '>FS Dev</div>
-                    </div>
-                </div>
+                {/*<div className='flex flex-col invisible md:visible items-center justify-center text-center gap-4 lg:gap-5'>*/}
+                {/*    <div className='flex items-center justify-center w-48 h-48 sm:w-64 sm:h-64 lg:w-75 lg:h-75 xl:w-96 xl:h-96 bg-[#007acc]/70 border-10 border-[#007acc] rounded-full overflow-hidden'>*/}
+                {/*        <img src={profile} alt="profile" className='w-full h-full object-cover' />*/}
+                {/*    </div>*/}
+                {/*    <h3 className='text-gray-700 text-xl sm:text-2xl font-semibold'>John Rey Icaro Elep</h3>*/}
+                {/*    <div className='flex items-center justify-between gap-5'>*/}
+                {/*        <span className='text-gray-700 sm:text-md'>Full-Stack Developer </span>*/}
+                {/*        <div className='w-1 h-1 bg-gray-700 rounded-full'></div>*/}
+                {/*        <span className='text-gray-700 sm:text-md'>Security Enthusiast</span>*/}
+                {/*    </div>*/}
+                {/*    <div className='flex items-center justify-center shadow-[0px_0px_10px_rgba(0,122,204,0.8)] rounded-2xl'>*/}
+                {/*        <div className='border-r border-[#007acc]/40 p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10'>{items.length}+</div>*/}
+                {/*        <div className='border-r border-[#007acc]/40 p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10'>CTF Completed</div>*/}
+                {/*        <div className='p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10 '>FS Dev</div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </div>
     );

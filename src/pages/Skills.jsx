@@ -213,7 +213,7 @@ function SkillsCategory({ category, items, num }) {
 
     return (
         <div>
-            <div className="flex justify-end mt-15 mb-5">
+            <div className="flex justify-end mt-8 mb-3 md:mt-15 md:mb-5">
                 <span className="text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">{category}</span>
             </div>
             {/* {items.length > 3 ? <div className={`grid grid-cols-3 gap-y-3 gap-x-3`}>
@@ -226,7 +226,7 @@ function SkillsCategory({ category, items, num }) {
                         <SkillsItem key={item.title} {...item} />
                     ))}
                 </div>} */}
-            <div className={`grid grid-cols-2 sm:grid-cols-3 gap-y-3 gap-x-3`}>
+            <div className={`grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-3`}>
                 {items.map((item) => (
                     <SkillsItem key={item.title} {...item}/>
                 ))}
@@ -239,13 +239,13 @@ function SkillsCategory({ category, items, num }) {
 export default function Skills() {
 
     return (
-        <div className="flex flex-col w-full sm:pb-0 px-4 sm:px-10 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="flex flex-col w-full pb-0 px-4 sm:px-10 md:pb-16 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
             <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Skills & Technologies</h1>
             <p className="text-gray-700 text-base lg:text-lg xl:text-xl">
                 Passionate about breaking things ethically and building things beautifully. <br /> From CTF challenges to pixel-perfect UIs - security, code, and design in one place.
             </p>
             <div className="pt-10 pb-5">
-                <div className="grid grid-cols-4 gap-4 items-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
                     <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
                         <h3 className="text-3xl text-[#007acc] font-bold">3+</h3>

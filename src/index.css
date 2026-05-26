@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+html{
+    scroll-behavior: smooth;
+}
+
+/**{*/
+/*    outline: 1px solid red;*/
+/*}*/
+
 .floating_icons {
     animation: float 3s ease-in-out infinite;
 }
