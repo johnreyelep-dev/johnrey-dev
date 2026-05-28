@@ -75,7 +75,7 @@ export default function Contact() {
         }
     }
     return (
-        <div className="w-full px-4 sm:px-10 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="w-full px-4 md:px-10 lg:px-35 xl:px-45 2xl:px-60">
             <div>
                 <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Contact & Reach out</h1>
                 <p className="text-gray-700 text-base lg:text-lg xl:text-xl text-justify">Open to collaborations, CTF teams, and freelance opportunities.<br />
@@ -85,24 +85,24 @@ export default function Contact() {
                 <div className="grid grid-cols-3 gap-3 ">
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-md md:text-3xl text-[#007acc] font-bold">24h</h3>
-                        <p className="text-[11px] md:text-base text-gray-700 font-semibold">Response</p>
+                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">24h</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">Response</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-md md:text-3xl text-[#007acc] font-bold">3</h3>
-                        <p className="text-[11px] md:text-base text-gray-700 font-semibold">Platforms</p>
+                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">3</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">Platforms</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-md md:text-3xl text-[#007acc] font-bold">Open</h3>
-                        <p className="text-[11px] md:text-base text-gray-700 font-semibold">To Collabs</p>
+                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">Open</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">To Collabs</p>
                     </div>
                 </div>
-                <div className="flex gap-2 justify-end mt-10 md:mt-15 mb-5">
+                <div className="flex gap-2 justify-end mt-8 mb-5">
                     <span className="md:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
                 </div>
-                <div className="flex flex-col justify-center gap-10 md:gap-15 lg:gap-30 xl:gap-40">
+                <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-30 xl:gap-40">
                     <div className="w-full md:w-1/2 ">
                         <div className="sm:space-y-1 lg:space-y-2 xl:space-y-3 w-full">
                             <span className="text-gray-700 text-[11px] md:text-[12px] lg:text-[13px] xl:text-sm font-semibold">GET IN TOUCH</span>
@@ -114,7 +114,7 @@ export default function Contact() {
                                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "#007acc" }} className="text-lg md:text-xl xl:text-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.40)] rounded-sm p-1" />
                                 <div className="flex flex-col">
                                     <span className="text-gray-700 text-[14px] font-semibold" >Email</span>
-                                    <span className="text-gray-700 text-[11px]" >johnreyelep17@gmail.com</span>
+                                    <span className="text-gray-700 text-[11px] " >johnreyelep17@gmail.com</span>
                                 </div>
                             </div>
                             <div className="flex gap-3 items-center">
@@ -139,7 +139,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <form onSubmit={handleSubmit}
-                        className=" w-full md:w-1/2 shadow-[0px_0px_15px_3px_rgba(0,0,0,0.20)] rounded-md py-5 px-5 md:py-10 md:px-10">
+                        className=" w-full md:w-1/2 shadow-[0px_0px_15px_3px_rgba(0,0,0,0.20)] rounded-md py-5 px-5 ">
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
                                 <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Name</label>
@@ -149,7 +149,8 @@ export default function Contact() {
                                     value={form.name}
                                     onChange={handleChange}
                                     placeholder="Your name"
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 md:h-10 rounded-md focus:outline-none" />
+                                    className="w-full h-7 px-1 text-[12px] border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8 " />
                                 {errors.name && <span className="text-red-700">{errors.name}</span>}
                             </div>
                             <div className="w-full flex flex-col">
@@ -160,7 +161,8 @@ export default function Contact() {
                                     value={form.email}
                                     onChange={handleChange}
                                     placeholder="Your email"
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none" />
+                                    className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8" />
                                 {errors.email && <span className="text-red-700">{errors.email}</span>}
                             </div>
                         </div>
@@ -170,7 +172,8 @@ export default function Contact() {
                                 <select name="subject"
                                     value={form.subject}
                                     onChange={handleChange}
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none"
+                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8"
                                 >
                                     <option value="">Select a topic...</option>
                                     <option>CTF Collaboration</option>
@@ -186,7 +189,8 @@ export default function Contact() {
                                 <select name="platform"
                                     value={form.platform}
                                     onChange={handleChange}
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none"
+                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8"
                                 >
                                     <option value="">Optional...</option>
                                     <option>Email</option>
@@ -202,7 +206,7 @@ export default function Contact() {
                                 value={form.message}
                                 onChange={handleChange}
                                 placeholder="Enter your message..."
-                                className="h-20 lg:h-32 xl:h-38 2xl:h-45 px-1 py-1 text-[12px] border border-gray-400 rounded-md
+                                className="h-20 md:h-30 lg:h-32 xl:h-38 2xl:h-45 px-1 py-1 text-[12px] border border-gray-400 rounded-md
                                     focus:outline-none"
                             >
                             </textarea>

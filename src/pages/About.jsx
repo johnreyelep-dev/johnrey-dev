@@ -75,7 +75,7 @@ export default function About() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
-        <div className="flex flex-col w-full pb-0 px-4 sm:px-10 md:pb-16 md:px-20 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-35 xl:px-45 2xl:px-60">
             <ShowImage
                 imgSrc={selectedImage?.imgSrc}
                 description={selectedImage?.description}
