@@ -246,25 +246,25 @@ export default function Skills() {
             </p>
             <div className="pt-10 pb-5">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
-                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-3xl text-[#007acc] font-bold">3+</h3>
-                        <p className="text-gray-700 font-semibold">CTF Events</p>
+                        <h3 className="text-md text-[#007acc] font-bold">3+</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">CTF Events</p>
                     </div>
-                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-3xl text-[#007acc] font-bold">12</h3>
-                        <p className="text-gray-700 font-semibold">Technologies</p>
+                        <h3 className="text-md text-[#007acc] font-bold">12</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">Technologies</p>
                     </div>
-                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-3xl text-[#007acc] font-bold">4</h3>
-                        <p className="text-gray-700 font-semibold">Domains</p>
+                        <h3 className="text-md text-[#007acc] font-bold">4</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">Domains</p>
                     </div>
-                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-3xl text-[#007acc] font-bold">PH</h3>
-                        <p className="text-gray-700 font-semibold">Bicol region PH</p>
+                        <h3 className="text-md text-[#007acc] font-bold">PH</h3>
+                        <p className="text-[11px] text-gray-700 font-semibold">Bicol region PH</p>
                     </div>
                 </div>
             </div>

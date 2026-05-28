@@ -83,31 +83,31 @@ export default function Contact() {
             </div>
             <div className="pt-10 pb-5">
                 <div className="grid grid-cols-3 gap-3 ">
-                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-1 md:p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
                         <h3 className="text-md md:text-3xl text-[#007acc] font-bold">24h</h3>
                         <p className="text-[11px] md:text-base text-gray-700 font-semibold">Response</p>
                     </div>
-                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-1 md:p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
                         <h3 className="text-md md:text-3xl text-[#007acc] font-bold">3</h3>
                         <p className="text-[11px] md:text-base text-gray-700 font-semibold">Platforms</p>
                     </div>
-                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-1 md:p-3 transition-all duration-300 ease-in-out
+                    <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
                         <h3 className="text-md md:text-3xl text-[#007acc] font-bold">Open</h3>
                         <p className="text-[11px] md:text-base text-gray-700 font-semibold">To Collabs</p>
                     </div>
                 </div>
                 <div className="flex gap-2 justify-end mt-10 md:mt-15 mb-5">
-                    <span className="text-[11px] md:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
+                    <span className="md:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
                 </div>
                 <div className="flex flex-col justify-center gap-10 md:gap-15 lg:gap-30 xl:gap-40">
                     <div className="w-full md:w-1/2 ">
                         <div className="sm:space-y-1 lg:space-y-2 xl:space-y-3 w-full">
                             <span className="text-gray-700 text-[11px] md:text-[12px] lg:text-[13px] xl:text-sm font-semibold">GET IN TOUCH</span>
                             <h1 className="text-[#007acc] font-semibold text-xl md:text-2xl lg:text-3xl">Let's build something great together...</h1>
-                            <p className="text-gray-700 text-[11px] md:text-base lg:text-lg">Whether you have a project in mind or just want to say hello — we'd love to hear from you.</p>
+                            <p className="text-gray-700 text-base md:text-base lg:text-lg">Whether you have a project in mind or just want to say hello — we'd love to hear from you.</p>
                         </div>
                         <div className="flex flex-col gap-2 xl:gap-3 mt-5 mb-5 sm:mt-8 sm:mb-8 lg:mt-10 lg:mb-10 xl:mb-10 2xl:mt-20 2xl:mb-20">
                             <div className="flex gap-3 items-center">
@@ -139,7 +139,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <form onSubmit={handleSubmit}
-                        className=" w-full md:w-1/2 shadow-[0px_0px_15px_3px_rgba(0,0,0,0.20)] rounded-2xl py-5 px-5 md:py-10 md:px-10">
+                        className=" w-full md:w-1/2 shadow-[0px_0px_15px_3px_rgba(0,0,0,0.20)] rounded-md py-5 px-5 md:py-10 md:px-10">
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
                                 <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Name</label>
