@@ -214,7 +214,7 @@ function SkillsCategory({ category, items, num }) {
     return (
         <div>
             <div className="flex justify-end mt-8 mb-3">
-                <span className="text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">{category}</span>
+                <span className="text-[14px] text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">{category}</span>
             </div>
             {/* {items.length > 3 ? <div className={`grid grid-cols-3 gap-y-3 gap-x-3`}>
                 {items.map((item) => (
