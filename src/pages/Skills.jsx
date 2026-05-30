@@ -226,7 +226,7 @@ function SkillsCategory({ category, items, num }) {
                         <SkillsItem key={item.title} {...item} />
                     ))}
                 </div>} */}
-            <div className={`grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-3`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-3`}>
                 {items.map((item) => (
                     <SkillsItem key={item.title} {...item}/>
                 ))}
@@ -239,7 +239,7 @@ function SkillsCategory({ category, items, num }) {
 export default function Skills() {
 
     return (
-        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-25 xl:px-45 2xl:px-60">
             <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Skills & Technologies</h1>
             <p className="text-gray-700 text-base lg:text-lg xl:text-xl">
                 Passionate about breaking things ethically and building things beautifully. <br /> From CTF challenges to pixel-perfect UIs - security, code, and design in one place.
@@ -248,23 +248,23 @@ export default function Skills() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
                     <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">3+</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">CTF Events</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">3+</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">CTF Events</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">12</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">Technologies</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">12</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">Technologies</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">4</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">Domains</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">4</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">Domains</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">PH</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">Bicol region PH</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">PH</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">Bicol region PH</p>
                     </div>
                 </div>
             </div>

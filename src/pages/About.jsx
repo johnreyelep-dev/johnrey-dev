@@ -46,7 +46,7 @@ function ShowImage({ imgSrc, description, onClose }) {
 
 function Item({ items, onShowImage }) {
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {items.map((item, index) => (
                 <div
                     key={index}
@@ -75,25 +75,22 @@ export default function About() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
-        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-35 xl:px-45 2xl:px-60">
-            <ShowImage
-                imgSrc={selectedImage?.imgSrc}
-                description={selectedImage?.description}
-                onClose={() => setSelectedImage(null)}
-            />
+        <div className="flex flex-col lg:flex-row w-full pb-0 px-4 md:px-10 lg:px-25 lg:gap-10 xl:px-45 2xl:px-60">
+            {/*<ShowImage*/}
+            {/*    imgSrc={selectedImage?.imgSrc}*/}
+            {/*    description={selectedImage?.description}*/}
+            {/*    onClose={() => setSelectedImage(null)}*/}
+            {/*/>*/}
 
-            <div className='flex flex-col lg:flex-row w-full justify-between gap-10 lg:gap-16'>
+            <div className='flex flex-col lg:flex-row w-[80%] justify-between gap-10 lg:gap-16'>
                 {/* Text & Certificates */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full">
                     <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">About me</h1>
                     <p className="text-gray-700 text-base sm:text-md md:text-lg xl:text-xl text-justify leading-relaxed">
                         Aspiring Full-Stack Web Developer focused on building secure, scalable, and responsive web applications. With experience in HackForGov Capture-The-Flag competitions, I have hands-on exposure to cybersecurity challenges such as SQL injection, OSINT, and web exploitation that strengthening my ability to develop secure and reliable systems.
                     </p>
                 </div>
-                <div>
-                    <h3 className="text-gray-700 font-semibold text-xl sm:text-2xl mb-3 mt-3 sm:mt-3 lg:mt-5">Certificate</h3>
-                    <Item items={items} onShowImage={setSelectedImage} />
-                </div>
+
 
                 {/* Profile */}
                 {/*<div className='flex flex-col invisible md:visible items-center justify-center text-center gap-4 lg:gap-5'>*/}
@@ -112,6 +109,10 @@ export default function About() {
                 {/*        <div className='p-3 sm:p-5 md:p-6 lg:p-7 xl:p-8 2xl:p-10 '>FS Dev</div>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
+            </div>
+            <div>
+                <h3 className="text-gray-700 font-semibold text-xl sm:text-2xl mb-3 mt-3 lg:mt-0 ">Certificate</h3>
+                <Item items={items} onShowImage={setSelectedImage} />
             </div>
         </div>
     );

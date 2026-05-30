@@ -15,7 +15,7 @@ export default function Home() {
             flex flex-col-reverse items-center justify-center h-[80vh] gap-10 px-4
             sm:flex-col-reverse sm:gap-10 sm:pt-28 sm:pb-16 sm:px-10
             md:flex-row md:items-center md:justify-between md:gap-10 md:py-5 md:px-10
-            lg:gap-16 lg:px-35 xl:px-45 xl:pt-10
+            lg:gap-16 lg:px-25 xl:px-45 xl:pt-10
             xl:gap-20 2xl:px-60
             md:min-h-[60vh]
         ">

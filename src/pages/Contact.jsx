@@ -75,7 +75,7 @@ export default function Contact() {
         }
     }
     return (
-        <div className="w-full px-4 md:px-10 lg:px-35 xl:px-45 2xl:px-60">
+        <div className="w-full px-4 md:px-10 lg:px-25 xl:px-45 2xl:px-60">
             <div>
                 <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Contact & Reach out</h1>
                 <p className="text-gray-700 text-base lg:text-lg xl:text-xl text-justify">Open to collaborations, CTF teams, and freelance opportunities.<br />
@@ -85,25 +85,25 @@ export default function Contact() {
                 <div className="grid grid-cols-3 gap-3 ">
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">24h</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">Response</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">24h</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">Response</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">3</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">Platforms</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">3</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">Platforms</p>
                     </div>
                     <div className="flex flex-col justify-center shadow-[0px_0px_15px_0px_rgba(0,0,0,0.20)] rounded-lg p-2 md:p-3 transition-all duration-300 ease-in-out
                          hover:-translate-y-1.5 hover:shadow-[#007acc]/60 hover:shadow-md">
-                        <h3 className="text-xl md:text-2xl text-[#007acc] font-bold">Open</h3>
-                        <p className="text-[11px] text-gray-700 font-semibold">To Collabs</p>
+                        <h3 className="text-xl md:text-2xl lg:text-3xl text-[#007acc] font-bold">Open</h3>
+                        <p className="text-[11px] lg:text-base text-gray-700 font-semibold">To Collabs</p>
                     </div>
                 </div>
                 <div className="flex gap-2 justify-end mt-8 mb-5">
                     <span className="text-[14px] md:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
                 </div>
-                <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-30 xl:gap-40">
-                    <div className="w-full md:w-1/2 ">
+                <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-10 xl:gap-40">
+                    <div className="w-full">
                         <div className="sm:space-y-1 lg:space-y-2 xl:space-y-3 w-full">
                             <span className="text-gray-700 text-[11px] md:text-[12px] lg:text-[13px] xl:text-sm font-semibold">GET IN TOUCH</span>
                             <h1 className="text-[#007acc] font-semibold text-xl md:text-2xl lg:text-3xl">Let's build something great together...</h1>
@@ -142,22 +142,23 @@ export default function Contact() {
                         <div className="w-full h-0.5 md:w-0.5 md:h-full bg-[#007acc]"></div>
                     </div>
                     <form onSubmit={handleSubmit}
-                        className=" w-full md:w-1/2 rounded-md pb-5 md:pt-5 md:pb-0 ">
+                        className="w-full rounded-md pb-5 md:pt-5 md:pb-0 ">
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Name</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Name</label>
                                 <input
                                     type="text"
                                     name="name"
                                     value={form.name}
                                     onChange={handleChange}
                                     placeholder="Your name"
-                                    className="w-full h-7 px-1 text-[12px] border border-gray-400 rounded-md focus:outline-none
-                                               md:h-8 " />
+                                    className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8 lg:h-10
+                                               lg:text-[14px]" />
                                 {errors.name && <span className="text-red-700">{errors.name}</span>}
                             </div>
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Email</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Email</label>
                                 <input
                                     type="email"
                                     name="email"
@@ -165,18 +166,20 @@ export default function Contact() {
                                     onChange={handleChange}
                                     placeholder="Your email"
                                     className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none
-                                               md:h-8" />
+                                               md:h-8 lg:h-10
+                                               lg:text-[14px] " />
                                 {errors.email && <span className="text-red-700">{errors.email}</span>}
                             </div>
                         </div>
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Subject</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Subject</label>
                                 <select name="subject"
                                     value={form.subject}
                                     onChange={handleChange}
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
-                                               md:h-8"
+                                    className="w-full h-7 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8 lg:h-10
+                                               lg:text-[14px] lg:px-2"
                                 >
                                     <option value="">Select a topic...</option>
                                     <option>CTF Collaboration</option>
@@ -188,12 +191,13 @@ export default function Contact() {
                                 {errors.subject && <span className="text-red-700">{errors.subject}</span>}
                             </div>
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Platform</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Platform</label>
                                 <select name="platform"
                                     value={form.platform}
                                     onChange={handleChange}
-                                    className="w-full h-7 px-1 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
-                                               md:h-8"
+                                    className="w-full h-7 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
+                                               md:h-8 lg:h-10
+                                               lg:text-[14px]"
                                 >
                                     <option value="">Optional...</option>
                                     <option>Email</option>
@@ -203,14 +207,16 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="w-full flex flex-col mb-5">
-                            <label htmlFor="" className="text-gray-700 text-[14px] font-semibold">Message</label>
+                            <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Message</label>
                             <textarea
                                 name="message"
                                 value={form.message}
                                 onChange={handleChange}
                                 placeholder="Enter your message..."
-                                className="h-20 md:h-34 lg:h-32 xl:h-38 2xl:h-45 px-1 py-1 text-[12px] border border-gray-400 rounded-md
-                                    focus:outline-none"
+                                className="h-20 px-1 py-1 text-[12px] border border-gray-400 rounded-md
+                                           focus:outline-none
+                                           md:h-34 lg:h-36 xl:h-38 2xl:h-45
+                                           lg:text-[14px] lg:px-2"
                             >
                             </textarea>
                         </div>
@@ -228,14 +234,14 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 disabled={sending}
-                                className="flex items-center justify-center w-full h-8 md:h-10 gap-2 text-[11px] text-white font-semibold border border-[#007acc]/70 rounded-md cursor-pointer transition-all duration-300 ease-in-out
+                                className="flex items-center justify-center w-full h-8 md:h-10 lg:h-12 gap-2 text-[11px] md:text-[14px] lg:text-base text-white font-semibold border border-[#007acc]/70 rounded-md cursor-pointer transition-all duration-300 ease-in-out
                                 shadow-[0px_4px_0px_0px_rgb(0,122,204)] active:translate-y-2 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 {sending ? (
-                                    <span className="text-[#007acc] text-sm font-semibold">Sending...</span>
+                                    <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base font-semibold">Sending...</span>
                                 ) : (
                                     <>
-                                        <span className="text-[#007acc] text-sm font-semibold">Send message</span>
+                                        <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base font-semibold">Send message</span>
                                         <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#007acc" }} />
                                     </>
                                 )}

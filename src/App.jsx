@@ -1,6 +1,6 @@
 import Header from './components/layout/Header';
 import Main from './components/layout/Main';
-import Footer from './components/layout/footer';
+import Footer from './components/layout/Footer.jsx';
 
 export default function App(){
   return (
