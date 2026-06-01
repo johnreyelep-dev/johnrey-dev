@@ -31,7 +31,7 @@ export default function Home() {
                     <h1 className="text-[#007acc] font-semibold text-3xl sm:text-2xl md:text-3xl lg:text-5xl">
                         Web Developer
                     </h1>
-                    <p className="text-gray-700 text-base sm:text-md md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+                    <p className="text-gray-700 text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                         Aspiring Full-Stack Web Developer, I design and develop complete web solutions with clean code,
                         responsive design, high performance, and secure system architecture.
                     </p>

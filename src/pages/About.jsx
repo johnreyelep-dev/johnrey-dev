@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
-import profile from '../assets/images/profile-image2.png';
+// import profile from '../assets/images/profile-image2.png';
 import cplusplusCert from '../assets/certficate/C++_cert.jpg';
 import hack4Gov from '../assets/certficate/Hack4Gov.jpg';
 import Cert_Fundamentals from '../assets/certficate/Cert_Fundamentals.png';
@@ -76,17 +76,17 @@ export default function About() {
 
     return (
         <div className="flex flex-col lg:flex-row w-full pb-0 px-4 md:px-10 lg:px-25 lg:gap-10 xl:px-45 2xl:px-60">
-            {/*<ShowImage*/}
-            {/*    imgSrc={selectedImage?.imgSrc}*/}
-            {/*    description={selectedImage?.description}*/}
-            {/*    onClose={() => setSelectedImage(null)}*/}
-            {/*/>*/}
+            <ShowImage
+                imgSrc={selectedImage?.imgSrc}
+                description={selectedImage?.description}
+                onClose={() => setSelectedImage(null)}
+            />
 
-            <div className='flex flex-col lg:flex-row w-[80%] justify-between gap-10 lg:gap-16'>
+            <div className='flex flex-col lg:flex-row w-full md:w-[80%] justify-between gap-10 lg:gap-16'>
                 {/* Text & Certificates */}
                 <div className="w-full">
                     <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">About me</h1>
-                    <p className="text-gray-700 text-base sm:text-md md:text-lg xl:text-xl text-justify leading-relaxed">
+                    <p className="text-gray-700 text-base md:text-lg xl:text-xl text-justify leading-relaxed">
                         Aspiring Full-Stack Web Developer focused on building secure, scalable, and responsive web applications. With experience in HackForGov Capture-The-Flag competitions, I have hands-on exposure to cybersecurity challenges such as SQL injection, OSINT, and web exploitation that strengthening my ability to develop secure and reliable systems.
                     </p>
                 </div>
@@ -111,7 +111,7 @@ export default function About() {
                 {/*</div>*/}
             </div>
             <div>
-                <h3 className="text-gray-700 font-semibold text-xl sm:text-2xl mb-3 mt-3 lg:mt-0 ">Certificate</h3>
+                <h3 className="text-gray-700 font-semibold text-2xl mb-3 mt-3 lg:mt-0 ">Certificate</h3>
                 <Item items={items} onShowImage={setSelectedImage} />
             </div>
         </div>
