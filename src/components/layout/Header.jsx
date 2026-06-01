@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHouse, faUser, faFolderOpen, faCode, faEnvelope, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const navItems = [
@@ -22,10 +22,10 @@ function NavItem({ icon, label, href, isActive, onClick }) {
             onMouseLeave={() => setHovered(false)}
         >
             <a href={href} className="relative flex items-center gap-2 transition-all duration-300">
-                <FontAwesomeIcon icon={icon} style={{ color: "#007acc" }} className='md:text-md lg:text-lg'/>
-                <span className=" md:text-sm lg:text-md font-semibold text-gray-700">{label}</span>
+                <FontAwesomeIcon icon={icon} style={{ color: "#007acc" }} className='md:text-md lg:text-lg xl:text-xl'/>
+                <span className=" md:text-sm lg:text-md xl:text-lg font-semibold text-gray-700">{label}</span>
                 <span
-                    className={`absolute h-0.5 bg-[#007acc] bottom-0 left-1/2 -translate-x-1/2 top-6.25 md:top-6 transition-all duration-300 ease-in-out rounded-sm
+                    className={`absolute h-0.5 bg-[#007acc] bottom-0 left-1/2 -translate-x-1/2 md:top-6 xl:top-7 transition-all duration-300 ease-in-out rounded-sm
                         ${hovered || isActive ? "w-full" : "w-0"}`}
                 />
             </a>
@@ -99,7 +99,7 @@ export default function Header() {
             <header
                 ref={menuRef}
                 className="flex justify-between items-center h-16 sm:h-18 w-full fixed top-0 left-0
-                    px-4 sm:px-10 md:px-10 lg:px-25 xl:px-45 2xl:px-60
+                    px-4 md:px-10 lg:px-25 xl:px-30 2xl:px-60
                     bg-white/80 backdrop-blur-md shadow-md z-50"
             >
                 {/* Logo */}

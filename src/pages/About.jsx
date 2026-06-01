@@ -75,14 +75,14 @@ export default function About() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
-        <div className="flex flex-col lg:flex-row w-full pb-0 px-4 md:px-10 lg:px-25 lg:gap-10 xl:px-45 2xl:px-60">
+        <div className="flex flex-col lg:flex-row w-full pb-0 px-4 md:px-10 lg:px-25 lg:gap-10 xl:px-30 2xl:px-60">
             <ShowImage
                 imgSrc={selectedImage?.imgSrc}
                 description={selectedImage?.description}
                 onClose={() => setSelectedImage(null)}
             />
 
-            <div className='flex flex-col lg:flex-row w-full md:w-[80%] justify-between gap-10 lg:gap-16'>
+            <div className='flex flex-col lg:flex-row w-full xl:w-[80%] justify-between gap-10 lg:gap-16'>
                 {/* Text & Certificates */}
                 <div className="w-full">
                     <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">About me</h1>

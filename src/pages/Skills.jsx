@@ -209,12 +209,12 @@ function SkillsItem({ title, tools, level, progress, imgSrc, iconColor, faIcon }
     );
 }
 
-function SkillsCategory({ category, items, num }) {
+function SkillsCategory({ category, items }) {
 
     return (
         <div>
             <div className="flex justify-end mt-8 mb-3">
-                <span className="text-[14px] text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">{category}</span>
+                <span className="text-[14px] xl:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">{category}</span>
             </div>
             {/* {items.length > 3 ? <div className={`grid grid-cols-3 gap-y-3 gap-x-3`}>
                 {items.map((item) => (
@@ -239,7 +239,7 @@ function SkillsCategory({ category, items, num }) {
 export default function Skills() {
 
     return (
-        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-25 xl:px-45 2xl:px-60">
+        <div className="flex flex-col w-full pb-0 px-4 md:px-10 lg:px-25 xl:px-30 2xl:px-60">
             <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Skills & Technologies</h1>
             <p className="text-gray-700 text-base lg:text-lg xl:text-xl">
                 Passionate about breaking things ethically and building things beautifully. <br /> From CTF challenges to pixel-perfect UIs - security, code, and design in one place.

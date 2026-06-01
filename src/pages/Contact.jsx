@@ -75,7 +75,7 @@ export default function Contact() {
         }
     }
     return (
-        <div className="w-full px-4 md:px-10 lg:px-25 xl:px-45 2xl:px-60">
+        <div className="w-full px-4 md:px-10 lg:px-25 xl:px-30 2xl:px-60">
             <div>
                 <h1 className="text-gray-700 font-semibold text-2xl sm:text-3xl xl:text-4xl mb-3">Contact & Reach out</h1>
                 <p className="text-gray-700 text-base lg:text-lg xl:text-xl text-justify">Open to collaborations, CTF teams, and freelance opportunities.<br />
@@ -100,35 +100,35 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="flex gap-2 justify-end mt-8 mb-5">
-                    <span className="text-[14px] md:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
+                    <span className="text-[14px] xl:text-base text-gray-700 font-semibold px-2 shadow-[0px_5px_15px_0px_rgba(0,0,0,0.20)] border-blue-100 rounded-md whitespace-nowrap">Send a Message</span>
                 </div>
-                <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-10 xl:gap-40">
+                <div className="flex flex-col md:flex-row justify-center gap-5 lg:gap-10 xl:gap-20">
                     <div className="w-full">
                         <div className="sm:space-y-1 lg:space-y-2 xl:space-y-3 w-full">
                             <span className="text-gray-700 text-[11px] md:text-[12px] lg:text-[13px] xl:text-sm font-semibold">GET IN TOUCH</span>
                             <h1 className="text-[#007acc] font-semibold text-xl md:text-2xl lg:text-3xl">Let's build something great together...</h1>
-                            <p className="text-gray-700 text-base md:text-base lg:text-lg">Whether you have a project in mind or just want to say hello — we'd love to hear from you.</p>
+                            <p className="text-gray-700 text-base md:text-base lg:text-lg xl:text-xl">Whether you have a project in mind or just want to say hello — we'd love to hear from you.</p>
                         </div>
-                        <div className="flex flex-col gap-2 xl:gap-3 mt-5 mb-5 sm:mt-8 sm:mb-8 lg:mt-10 lg:mb-10 xl:mb-10 2xl:mt-20 2xl:mb-20">
+                        <div className="flex flex-col gap-2 xl:gap-3 mt-5 mb-5 lg:mt-10 lg:mb-10 xl:mt-13 xl:mb-13 2xl:mt-20 2xl:mb-20">
                             <div className="flex gap-3 items-center">
                                 <FontAwesomeIcon icon={faEnvelope} style={{ color: "#007acc" }} className="text-lg md:text-xl xl:text-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.40)] rounded-sm p-1" />
                                 <div className="flex flex-col">
-                                    <span className="text-gray-700 text-[14px] font-semibold" >Email</span>
-                                    <span className="text-gray-700 text-[11px] " >johnreyelep17@gmail.com</span>
+                                    <span className="text-gray-700 text-[14px] xl:text-lg font-semibold" >Email</span>
+                                    <span className="text-gray-700 text-[11px] xl:text-base " >johnreyelep17@gmail.com</span>
                                 </div>
                             </div>
                             <div className="flex gap-3 items-center">
                                 <FontAwesomeIcon icon={faDiscord} style={{ color: "#007acc", }} className="text-lg md:text-xl xl:text-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.40)] rounded-sm p-1" />
                                 <div className="flex flex-col">
-                                    <span className="text-gray-700 text-[14px] font-semibold" >Discord</span>
-                                    <span className="text-gray-700 text-[11px]" >#totnn6</span>
+                                    <span className="text-gray-700 text-[14px] xl:text-lg font-semibold" >Discord</span>
+                                    <span className="text-gray-700 text-[11px] xl:text-base" >#totnn6</span>
                                 </div>
                             </div>
                             <div className="flex gap-3 items-center">
                                 <FontAwesomeIcon icon={faMapLocation} style={{ color: "#007acc", }} className="text-lg md:text-xl xl:text-2xl shadow-[0px_0px_10px_0px_rgba(0,0,0,0.40)] rounded-sm p-1" />
                                 <div className="flex flex-col">
-                                    <span className="text-gray-700 text-[14px] font-semibold" >Location</span>
-                                    <span className="text-gray-700 text-[11px]" >Calangcawan Sur, Vinzons Camarines Norte</span>
+                                    <span className="text-gray-700 text-[14px] xl:text-xl font-semibold" >Location</span>
+                                    <span className="text-gray-700 text-[11px] xl:text-base" >Calangcawan Sur, Vinzons Camarines Norte</span>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                         className="w-full rounded-md pb-5 md:pt-5 md:pb-0 ">
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Name</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base xl:text-lg font-semibold">Name</label>
                                 <input
                                     type="text"
                                     name="name"
@@ -154,11 +154,11 @@ export default function Contact() {
                                     placeholder="Your name"
                                     className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none
                                                md:h-8 lg:h-10
-                                               lg:text-[14px]" />
+                                               lg:text-[14px] xl:text-base" />
                                 {errors.name && <span className="text-red-700">{errors.name}</span>}
                             </div>
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Email</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base xl:text-lg font-semibold">Email</label>
                                 <input
                                     type="email"
                                     name="email"
@@ -167,19 +167,19 @@ export default function Contact() {
                                     placeholder="Your email"
                                     className="w-full h-7 px-1 md:px-2 text-[12px] border border-gray-400 rounded-md focus:outline-none
                                                md:h-8 lg:h-10
-                                               lg:text-[14px] " />
+                                               lg:text-[14px] xl:text-base" />
                                 {errors.email && <span className="text-red-700">{errors.email}</span>}
                             </div>
                         </div>
                         <div className="flex justify-between gap-2 mb-3 md:gap-5 md:mb-5">
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Subject</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base xl:text-lg font-semibold">Subject</label>
                                 <select name="subject"
                                     value={form.subject}
                                     onChange={handleChange}
                                     className="w-full h-7 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
                                                md:h-8 lg:h-10
-                                               lg:text-[14px] lg:px-2"
+                                               lg:text-[14px] xl:text-base lg:px-2"
                                 >
                                     <option value="">Select a topic...</option>
                                     <option>CTF Collaboration</option>
@@ -191,13 +191,13 @@ export default function Contact() {
                                 {errors.subject && <span className="text-red-700">{errors.subject}</span>}
                             </div>
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Platform</label>
+                                <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base xl:text-lg font-semibold">Platform</label>
                                 <select name="platform"
                                     value={form.platform}
                                     onChange={handleChange}
                                     className="w-full h-7 md:px-2 text-[12px] text-gray-700 border border-gray-400 rounded-md focus:outline-none
                                                md:h-8 lg:h-10
-                                               lg:text-[14px]"
+                                               lg:text-[14px] xl:text-base"
                                 >
                                     <option value="">Optional...</option>
                                     <option>Email</option>
@@ -207,7 +207,7 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="w-full flex flex-col mb-5">
-                            <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base font-semibold">Message</label>
+                            <label htmlFor="" className="text-gray-700 text-[14px] lg:text-base xl:text-lg font-semibold">Message</label>
                             <textarea
                                 name="message"
                                 value={form.message}
@@ -216,7 +216,7 @@ export default function Contact() {
                                 className="h-20 px-1 py-1 text-[12px] border border-gray-400 rounded-md
                                            focus:outline-none
                                            md:h-34 lg:h-36 xl:h-38 2xl:h-45
-                                           lg:text-[14px] lg:px-2"
+                                           lg:text-[14px] lg:px-2 xl:text-base"
                             >
                             </textarea>
                         </div>
@@ -238,10 +238,10 @@ export default function Contact() {
                                 shadow-[0px_4px_0px_0px_rgb(0,122,204)] active:translate-y-2 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed"
                             >
                                 {sending ? (
-                                    <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base font-semibold">Sending...</span>
+                                    <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base xl:text-xl font-semibold">Sending...</span>
                                 ) : (
                                     <>
-                                        <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base font-semibold">Send message</span>
+                                        <span className="text-[#007acc] text-sm md:text-[14px] lg:text-base xl:text-xl font-semibold">Send message</span>
                                         <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#007acc" }} />
                                     </>
                                 )}
